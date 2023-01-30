@@ -1,9 +1,12 @@
 {
-  "name": "weather-cli",
-  "version": "1.0.0",
+  "name": "weather-cli-severinov",
+  "version": "1.0.4",
   "description": "CLI for getting weather",
-  "main": "index.js",
-  "bin": "./index.js",
+  "main": "weather.js",
+  "bin": {
+    "weather": "weather.js"
+  },
+  "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -13,12 +16,16 @@
   ],
   "author": "Denis Severinov",
   "license": "ISC",
-  "homepage": "...",
   "repository": {
     "type": "git",
-    "url": "..."
+    "url": "https://github.com/DenisSeverinov"
   },
   "bugs": {
     "email": "denis.severinovvv@gmail.com"
+  },
+  "dependencies": {
+    "axios": "1.2.6",
+    "chalk": "5.2.0",
+    "dedent-js": "1.0.1"
   }
 }
